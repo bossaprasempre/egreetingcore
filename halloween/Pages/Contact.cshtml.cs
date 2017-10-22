@@ -10,9 +10,19 @@ namespace halloween.Pages
     {
         public string Message { get; set; }
 
-        public void OnGet()
-        {
-            Message = "Your contact page.";
-        }
+        //[BindProperty]
+        //public string to_name { get; set; }
+        //[BindProperty]
+        //public string to_email { get; set; }
+
+        //public void OnGet()
+        //{
+       
+        //}
+
+        //public void OnPost()
+        //{
+        //    Message = "Hello, Anna!!!";
+        //}
     }
 }

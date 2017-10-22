@@ -1,0 +1,72 @@
+﻿@model IndexModel
+
+<form method="post">
+    
+        <div class="col-sm-6 form-group">   
+                <label asp-for="bridgeGreetings.recipient"></label>
+                <input type="text" asp-for="bridgeGreetings.recipient" class="form-control" placeholder="Recipient's Name'" maxlength="100" required />
+                <span asp-validation-for="bridgeGreetings.recipient " class="text-danger"></span>
+                </div>
+         </div>
+
+                        <div class="countdown"></div>
+</div>
+       
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.recipEmail"></label>
+        <input type="email" asp-for="bridgeGreetings.recipEmail" class="form-control">
+        <span asp-validation-for="bridgeGreetings.recipEmail" class="text-danger"></span>
+    </div>
+    
+
+    <div class="countdown"></div>
+    
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.senderName"></label>
+        <input type="text" asp-for="bridgeGreetings.senderName" class="form-control">
+        <span asp-validation-for="bridgeGreetings.senderName " class="text-danger"></span>
+    </div>
+    
+
+    <div class="countdown"></div>
+    
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.senderEmail"></label>
+        <input type="email" asp-for="bridgeGreetings.senderEmail" class="form-control">
+        <span asp-validation-for="bridgeGreetings.senderEmail " class="text-danger"></span>
+    </div>
+    
+
+    <div class="countdown"></div>
+    
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.subject"></label>
+        <input type="text" asp-for="bridgeGreetings.subject" class="form-control">
+        <span asp-validation-for="bridgeGreetings.subject" class="text-danger"></span>
+    </div>
+    
+
+    <div class="countdown"></div>
+    
+
+    <div class="countdown">
+        <div class="col-sm-12 form-group">
+            <label asp-for="bridgeGreetings.message"></label>
+            <textarea label asp-for="bridgeGreetings.message" class="form-control"></textarea>
+        </div>
+        <span asp-validation-for="bridgeGreetings.message " class="text-danger"></span>
+    </div>
+    
+
+    <div class="countdown"></div>
+    
+                    @*<span asp-validation-for="message" class="text-danger"></span>*@
+                    <div class="countdown"></div>
+                
+                <div class="col-sm-12 form-group">
+                    <div class="g-recaptcha" data-sitekey="MyKey"></div>
+                    <br />
+                    <button class="btn btn-default pull-left" type="submit">Send</button>
+                </div>
+
+</form>
