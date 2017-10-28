@@ -1,0 +1,48 @@
+﻿@model IndexModel
+
+<div class="preview">
+
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.recipient"></label>
+        <input type="text" asp-for="bridgeGreetings.recipient" class="form-control" placeholder="Recipient's Name'" maxlength="100" required />
+        
+    </div>
+
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.recipEmail"></label>
+        <input type="email" asp-for="bridgeGreetings.recipEmail" class="form-control">
+        
+    </div>
+
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.senderName"></label>
+        <input type="text" asp-for="bridgeGreetings.senderName" class="form-control">
+
+    </div>
+
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.senderEmail"></label>
+        <input type="email" asp-for="bridgeGreetings.senderEmail" class="form-control">
+        
+    </div>
+
+
+    <div class="col-sm-6 form-group">
+        <label asp-for="bridgeGreetings.subject"></label>
+        <input type="text" asp-for="bridgeGreetings.subject" class="form-control">
+    </div>
+
+        <div class="col-sm-12 form-group">
+            <label asp-for="bridgeGreetings.message"></label>
+            <textarea label asp-for="bridgeGreetings.message" class="form-control"></textarea>
+        </div>
+
+
+    @*<span asp-validation-for="message" class="text-danger"></span>*@
+
+    <div class="col-sm-12 form-group">
+        @*<div class="g-recaptcha" data-sitekey="MyKey"></div>
+        <br />*@
+        <button class="btn btn-default pull-left" type="submit">Send</button>
+    </div>
+</div>
